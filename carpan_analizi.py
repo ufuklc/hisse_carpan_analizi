@@ -16,7 +16,7 @@ for i in hisseler:
 
     options.add_experimental_option('excludeSwitches',['enable-logging'])
 
-    driver=webdriver.Chrome(executable_path=r"C:/Users/ufuk_/OneDrive/Masaüstü/chromedriver.exe",chrome_options=options)
+    driver=webdriver.Chrome(executable_path="chromedriver.exe",chrome_options=options)
 
 
     url1="https://www.halkyatirim.com.tr/skorkart/{}".format(i)
@@ -45,7 +45,7 @@ for i in hisseler:
     driver.close()
 
 
-    driver2=webdriver.Chrome(executable_path=r"C:/Users/ufuk_/OneDrive/Masaüstü/chromedriver.exe",chrome_options=options)
+    driver2=webdriver.Chrome(executable_path="chromedriver.exe",chrome_options=options)
 
     driver2.maximize_window()
 
